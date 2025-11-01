@@ -18,6 +18,7 @@
   --gap-modules: 30px;
 }
 
+
 html {
   cursor: none;
   overflow: hidden;
@@ -118,11 +119,12 @@ header {
   font-size: var(--font-size-xsmall);
   font-family: var(--font-primary), Arial, Helvetica, sans-serif;
   font-weight: 400;
-  border-bottom: 1px solid var(--color-text-dimmed);
+  /* border-bottom: 1px solid var(--color-text-dimmed); */
   line-height: 15px;
   padding-bottom: 5px;
   margin-bottom: 10px;
   color: var(--color-text);
+   text-decoration: underline;
 }
 
 sup {
@@ -219,12 +221,16 @@ sup {
 }
 
 .region.upper.third {
-  top: 33%;
+  top: 43%;
+  right: 43%
+
 }
 
 .region.middle.center {
   top: 50%;
+    left: 28%;
 }
+
 
 .region.lower.third {
   top: 66%;
@@ -263,4 +269,10 @@ sup {
 
 .region.right .flex {
   justify-content: flex-end;
+}
+ 
+.region.bottom.left .calendar td {
+  font-size: 20px;      /* change to any size you like */
+  line-height: 1.3;     /* controls vertical spacing */
+  vertical-align: middle;
 }
